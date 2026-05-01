@@ -33,6 +33,11 @@ body {
   background: #0a0f1c;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo span {
   color: #2f6bff;
 }
@@ -57,7 +62,7 @@ nav a.active {
 
 .hero {
   position: relative;
-  height: 90vh;
+  min-height: 90vh;
   background: url("carimage.png") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -229,9 +234,9 @@ transform: translateY(-2px);
 }
 
 .icon-circle {
-  width: 10px;
-  height: 10-x;
-  min-width: 10px;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
   border-radius: 50%;
   background-color: #2f6bff;
   display: flex;
@@ -242,9 +247,8 @@ transform: translateY(-2px);
 }
 
 .icon-circle img {
-  width: 10%;
-  height: 10%;
-  object-fit: contain;
+  width: 60%;
+  height: 60%;
 }
 
 .text h3 {
@@ -428,18 +432,12 @@ color: #aaa;
   transform: translateY(-2px);
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-  .booking-wrapper {
-    grid-template-columns: 1fr;
-  }
-
   .form-row {
     grid-template-columns: 1fr;
   }
 
 .services-hero {
-  height: 40vh;
+  min-height: 40vh;
   background: linear-gradient(to right, #0a0f1c, #111827);
   display: flex;
   align-items: center;
@@ -528,18 +526,13 @@ color: #aaa;
   transform: translateY(-2px);
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-  .services-page {
-    grid-template-columns: 1fr;
-  }
 
   .services-hero-content h1 {
     font-size: 36px;
   }
 
 .about-hero {
-  height: 45vh;
+  min-height: 45vh;
   position: relative;
   background: linear-gradient(to right, #0a0f1c, #111827);
   display: flex;
@@ -674,12 +667,6 @@ color: #aaa;
   line-height: 1.6;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-
   .values-grid {
     grid-template-columns: 1fr;
   }
@@ -693,7 +680,7 @@ color: #aaa;
 ========================= */
 
 .packages-hero {
-  height: 40vh;
+  min-height: 40vh;
   background: linear-gradient(to right, #0a0f1c, #111827);
   display: flex;
   align-items: center;
@@ -807,8 +794,90 @@ color: #aaa;
   transform: translateY(-2px);
 }
 
-/* MOBILE */
+
+  .featured {
+    transform: none;
+  }
+
+  .packages-content h1 {
+    font-size: 36px;
+  }
+
+/* =========================
+   MOBILE (GLOBAL FIX)
+========================= */
 @media (max-width: 900px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* HERO */
+  .hero-content {
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  /* SERVICES BOX */
+  .services-box {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* TRUST SECTION */
+  .trust-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  /* BOOKING PAGE */
+  .booking-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* SERVICES PAGE */
+  .services-page {
+    grid-template-columns: 1fr;
+  }
+
+  .services-hero-content h1 {
+    font-size: 36px;
+  }
+
+  /* ABOUT PAGE */
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+
+  /* PACKAGES PAGE */
   .packages-section {
     grid-template-columns: 1fr;
   }
