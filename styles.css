@@ -116,14 +116,14 @@ transition: 0.3s ease;
 }
 
 .primary {
-background: #000;
-color: #fff;
+background: #2f6bff;
+color: white;
 }
 
 .secondary {
 background: transparent;
-color: #000;
-border: 2px solid #000;
+color: white;
+border: 2px solid #555;
 }
 
 .btn:hover {
