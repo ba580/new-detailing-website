@@ -9,6 +9,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .logo img {
@@ -30,11 +32,6 @@ body {
   align-items: center;
   padding: 20px 50px;
   background: #0a0f1c;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .logo span {
