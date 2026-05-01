@@ -203,7 +203,7 @@ nav a.active {
   justify-content: center;
   gap: 25px;
   padding: 40px 20px;
-  background: #111; /* change if needed */
+  background: #111;
   border-radius: 12px;
   max-width: 1000px;
   margin: auto;
@@ -227,7 +227,7 @@ nav a.active {
   height: 55px;
   min-width: 55px;
   border-radius: 50%;
-  background-color: navyblue;
+  background-color: #2f6bff;
   display: flex;
   align-items: center;
   justify-content: center;
