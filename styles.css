@@ -229,9 +229,9 @@ transform: translateY(-2px);
 }
 
 .icon-circle {
-  width: 55px;
-  height: 55px;
-  min-width: 55px;
+  width: 10px;
+  height: 10-x;
+  min-width: 10px;
   border-radius: 50%;
   background-color: #2f6bff;
   display: flex;
@@ -242,8 +242,8 @@ transform: translateY(-2px);
 }
 
 .icon-circle img {
-  width: 60%;
-  height: 60%;
+  width: 10%;
+  height: 10%;
   object-fit: contain;
 }
 
