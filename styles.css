@@ -537,4 +537,153 @@ color: #aaa;
   .services-hero-content h1 {
     font-size: 36px;
   }
+
+.about-hero {
+  height: 45vh;
+  position: relative;
+  background: linear-gradient(to right, #0a0f1c, #111827);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-content h1 {
+  font-size: 52px;
+  color: white;
+}
+
+.about-hero-content p {
+  color: #bbb;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+/* MAIN SECTION */
+.about-section {
+  padding: 80px 20px;
+  background: #0a0f1c;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* TEXT */
+.about-text h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #bbb;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* IMAGE */
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgba(47,107,255,0.2);
+}
+
+/* STATS */
+.about-stats {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.stat {
+  flex: 1;
+  background: #0d1324;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(47,107,255,0.2);
+}
+
+.stat h3 {
+  color: #2f6bff;
+  font-size: 22px;
+}
+
+.stat p {
+  color: #bbb;
+  font-size: 13px;
+}
+
+/* VALUES SECTION */
+.about-values {
+  padding: 80px 20px;
+  background: #0d1324;
+  text-align: center;
+}
+
+.about-values h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.value-card {
+  background: #0a0f1c;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(47,107,255,0.15);
+  transition: 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card h3 {
+  color: #2f6bff;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
