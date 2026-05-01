@@ -230,7 +230,7 @@ nav a.active {
   height: 55px;
   min-width: 55px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(135deg, #0072ff, #001f54);
   display: flex;
   align-items: center;
   justify-content: center;
