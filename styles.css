@@ -687,3 +687,137 @@ color: #aaa;
   .about-hero-content h1 {
     font-size: 36px;
   }
+
+  /* =========================
+   PACKAGES PAGE
+========================= */
+
+.packages-hero {
+  height: 40vh;
+  background: linear-gradient(to right, #0a0f1c, #111827);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.packages-content h1 {
+  font-size: 52px;
+  color: white;
+}
+
+.packages-content p {
+  color: #bbb;
+  margin-top: 10px;
+}
+
+/* SECTION */
+.packages-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.package-card {
+  background: #0d1324;
+  border: 1px solid rgba(47,107,255,0.15);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.package-card h2 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.package-card h3 {
+  color: #2f6bff;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.package-card p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+/* LIST */
+.package-card ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.package-card ul li {
+  color: #ddd;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.package-card ul li::before {
+  content: "✓";
+  color: #2f6bff;
+  position: absolute;
+  left: 0;
+}
+
+/* FEATURED CARD */
+.featured {
+  border: 1px solid #2f6bff;
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2f6bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+/* BUTTON */
+.package-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #2f6bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.package-card .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .packages-section {
+    grid-template-columns: 1fr;
+  }
+
+  .featured {
+    transform: none;
+  }
+
+  .packages-content h1 {
+    font-size: 36px;
+  }
+}
