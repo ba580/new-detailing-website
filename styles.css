@@ -5,6 +5,11 @@
   font-family: Arial, sans-serif;
 }
 
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 body {
   background: #0a0f1c;
   color: white;
