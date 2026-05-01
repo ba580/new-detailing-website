@@ -437,4 +437,103 @@ color: #aaa;
   .form-row {
     grid-template-columns: 1fr;
   }
+
+.services-hero {
+  height: 40vh;
+  background: linear-gradient(to right, #0a0f1c, #111827);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
+
+.services-hero-content h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.services-hero-content p {
+  color: #bbb;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+/* GRID */
+.services-page {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.service-card {
+  background: #0d1324;
+  border: 1px solid rgba(47,107,255,0.2);
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.service-card h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+/* LIST */
+.service-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.service-card ul li {
+  color: #ddd;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.service-card ul li::before {
+  content: "✓";
+  color: #2f6bff;
+  position: absolute;
+  left: 0;
+}
+
+/* BUTTON */
+.service-card .btn {
+  display: inline-block;
+  background: #2f6bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-card .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .services-page {
+    grid-template-columns: 1fr;
+  }
+
+  .services-hero-content h1 {
+    font-size: 36px;
+  }
