@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0a0f1c;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #0a0f1c;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo span {
+  color: #2f6bff;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+nav a.active {
+  color: white;
+  border-bottom: 2px solid #2f6bff;
+}
+
+.phone {
+  background: #2f6bff;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("carimage.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #0a0f1c 40%, transparent);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.hero h1 span {
+  color: #2f6bff;
+}
+
+.tagline {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.tagline span {
+  color: #2f6bff;
+}
+
+.desc {
+  margin: 15px 0 25px;
+  color: #ccc;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #2f6bff;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+}
+
+.mobile-text {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.mobile-text span {
+  color: #2f6bff;
+}
+
+/* SERVICES BOX */
+.services-box {
+  position: absolute;
+  bottom: -60px;
+  right: 50px;
+  background: #0d1324;
+  padding: 20px;
+  border-radius: 15px;
+  width: 420px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.services-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.services {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  background: #111827;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 33%;
+}
+
+.card img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+
+.card h4 {
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.card p {
+  font-size: 11px;
+  color: #aaa;
+  padding-bottom: 10px;
+}
+
+/* FEATURES */
+.features {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background: #0b1328;
+}
+
+.feature {
+  text-align: center;
+  max-width: 200px;
+}
+
+.feature h4 {
+  margin-bottom: 10px;
+}
