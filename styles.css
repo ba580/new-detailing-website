@@ -1224,3 +1224,104 @@ color: #aaa;
     text-align: center;
   }
 }
+
+/* IMAGE PLACEHOLDERS */
+.hero-image-placeholder,
+.image-placeholder {
+  background: #111827;
+  border: 2px dashed #2f6bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero-image-placeholder {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.image-placeholder.large {
+  height: 220px;
+}
+
+.image-placeholder.medium {
+  height: 150px;
+  width: 200px;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border: 2px dashed #2f6bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #aaa;
+}
+
+.icon-placeholder.small {
+  width: 30px;
+  height: 30px;
+}
+
+/* MAKE HERO POSITION WORK */
+.contact-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #0a0f1c 60%, transparent);
+  z-index: 1;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px;
+}
+
+/* LAYOUT CLEANUP */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-main {
+  padding: 80px 20px;
+}
+
+.contact-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 40px;
+  margin: 40px;
+  background: #0d1324;
+  border-radius: 15px;
+}
